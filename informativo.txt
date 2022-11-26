@@ -1,0 +1,23 @@
+É padrão da linguagem iniciar da maneira abaixo:
+
+#language: pt
+
+Funcionalidade: Nome da Funcionalidade
+Para (Função do software)
+O (Pessoa que irá utilizar o software)
+Quer ou Deseja (Necessidade a ser suprida com esse software)
+
+Cenario: Situação
+Dado Estado Inicial
+Quando Ação Realizada
+Entao Resultado Esperado
+
+É possível uma tag utilizando o @, e esse comando pra executar:
+cucumber -t nome da tag
+
+@cenario_um
+Cenario: Cadastro de usuario menor de idade
+Dado que o usuario seja menor de idadeE ele queira se cadastrar
+Quando ele preenche o formulario com dados validos
+Entao ele sera cadastrado com sucesso
+E conteudo para maiores de 18 anos nao ficara disponivel
